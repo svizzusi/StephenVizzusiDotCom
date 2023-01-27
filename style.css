@@ -10,6 +10,10 @@ body {
     background-position: center center;
     background-attachment: fixed;
 }
+div#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* small logo adjustments*/
 body header img.small-logo {
@@ -24,8 +28,8 @@ body header img.small-logo {
 body header img.large-logo {
     height: 250px;
     width:250px;
-    left: 500px;
-    top: 150px;
+    left: 30%;
+    top: 40%;
     position:relative;
 }
 
@@ -60,6 +64,89 @@ nav a:active {
     color: white;
 }
 
+
+/* -- this is the new banner code --> */
+
+.main-banner {
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+    left: -500px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-banner .imgban {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;;
+}
+
+.main-banner #imgban3 {
+    background-image: url(images/gorillaFace.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner #imgban2 {
+    background-image: url(images/jungle.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner #imgban1 {
+    background-image: url(images/bamboo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner .imgban-box h2 {
+    font-family: arial;
+    font-size: 30px;
+    color: #fff;
+}
+
+.main-banner .imgban-box p {
+    padding-top: 3px;
+    font-family: arial;
+    font-size: 10px;
+    color: #fff;
+}
+
+.main-banner #imgban3 .imgban-box {
+    padding-top: 55px;
+    padding-left: 25px;
+}
+
+.main-banner #imgban2 .imgban-box {
+    padding-top: 55px;
+    padding-right: 25px;
+    float: right;
+    text-align: right;
+}
+
+.main-banner #imgban1 .imgban-box {
+    padding-top: 17px;
+    padding-left: 25px;
+}
+
+
+
+
+
+
+
+
+/* place details bar at bottom of page */
 section#details{
     padding-bottom: 0px;
     position: absolute;

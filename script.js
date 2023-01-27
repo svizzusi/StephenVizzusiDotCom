@@ -1,6 +1,6 @@
 const h2 = document.createElement("h2");
 h2.textContent = "Welcome to the Jungle";
-document.querySelector("header").appendChild(h2);
+document.querySelector("#wrapper").appendChild(h2);
 
 
 
